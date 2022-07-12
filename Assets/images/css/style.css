@@ -1,0 +1,114 @@
+*{
+    background-color:rgba(41, 99, 242, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    box-sizing: border-box;
+}
+:root{
+    --Orange: rgb(240, 100, 39);
+    --FontSize24: 24px;
+}
+
+body{
+    margin: 0;
+}
+h2, p{
+ margin: 0;   
+}
+
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--Orange);
+    padding: 15px 1% 30px 1%;
+}
+header h1{
+    background-color: rgb(228, 76, 37); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10px;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: var(--FontSize24);
+}
+header nav a{
+    color: white;
+    background-color: var(--Orange);
+    padding: 5px;
+    
+}
+
+
+.Section {
+
+display: flex;
+flex-wrap: wrap;
+align-items: inherit;
+justify-content: space-evenly;
+
+}
+
+h1 h2{
+ font-family: monospace;   
+}
+
+
+.FullWeb{
+    background:rgb(246,246,246) ;
+    background-image: url("../images/html-css.png");
+    background-size: cover;
+    background-position: center ;
+    min-height: 650px;
+    text-align:end;
+    font-size: xx-large;
+    font-family:monospace;
+    padding: 7% 7% 7%;
+    display: fle;
+  
+   
+
+
+}
+.FullWeb section{
+    flex:0 0 10%;
+}
+.FullWeb h2{
+    margin: 0;
+    background-color: rgb(246,246,246) ;
+    color: black;
+    display: inline;
+}
+
+
+.Contact-Me nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    padding: 3px 1% 3px 1%;
+
+    
+}
+
+.Contact-Me nav a{
+    /* padding: 10%; */
+    display: inline-block;
+}
+
+/* Image classes */
+.CBIR{
+    background-image: url("../images/Matlab.png");
+}
+.Scratch{
+    background-image: url("../images/Galaga.PNG");
+}
