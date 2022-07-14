@@ -1,22 +1,30 @@
 *{
-    background-color:rgba(41, 99, 242, 0.5);
+    
     font-family: 'Times New Roman', Times, serif;
     color: white;
     box-sizing: border-box;
 }
 :root{
     --Orange: rgb(240, 100, 39);
+    --CSSBlue: rgb(41, 98, 242);
+    --CssColor: rgb(37,77,227);
     --FontSize24: 24px;
 }
 
 body{
     margin: 0;
+    background-color: var(--CssColor);
 }
 h2, p{
  margin: 0;   
 }
 
-
+h2{
+    font-size: 50px;
+}
+p{
+    font-size: x-large;
+}
 
 
 header{
@@ -26,12 +34,13 @@ header{
     align-items: center;
     justify-content:space-between;
     background-color: var(--Orange);
-    padding: 15px 1% 30px 1%;
+    
 }
 header h1{
     background-color: rgb(228, 76, 37); 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-right: 10px;
+    font-size: 50px;
 }
 header nav{
     display: flex;
@@ -47,7 +56,6 @@ header nav a{
     
 }
 
-
 .Section {
 
 display: flex;
@@ -58,52 +66,111 @@ justify-content: space-evenly;
 }
 
 h1 h2{
- font-family: monospace;   
+ font-family: monospace; 
+ margin: 0;  
 }
 
 
-.FullWeb{
-    background:rgb(246,246,246) ;
+.Frame{
+    
     background-image: url("../images/html-css.png");
     background-size: cover;
     background-position: center ;
     min-height: 650px;
     text-align:end;
-    font-size: xx-large;
+    font-size: medium;
     font-family:monospace;
     padding: 7% 7% 7%;
-    display: fle;
-  
-   
-
-
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
 }
-.FullWeb section{
-    flex:0 0 10%;
+.Frame section{
+    flex:0 0 0%;
+    
+    
 }
-.FullWeb h2{
+.Frame h2{
     margin: 0;
+    padding: 5px 5px;
     background-color: rgb(246,246,246) ;
     color: black;
     display: inline;
 }
 
 
-.Contact-Me nav{
-    display: flex;
+.Standard{
+margin: 1px;
+padding: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: stretch;
+
+}
+.Standard > h2{
+    flex: 0 0 10%;
+    text-align: right;
+    padding-right: 40px;
+    border-right: 30px solid color(black) ;
+    
+}
+.Standard > section{
+flex: 0 0 90%;
+
+}
+.Standard p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+   
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
-    padding: 3px 1% 3px 1%;
+    background-color: var(--CSSBlue);
+    padding: 15px 1% 30px 1%;
 
+
+}
+footer h2{
+flex: 0 0 10%;
+padding-right: 20px;
+
+
+}
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: var(--FontSize24);
+}
+footer nav a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 1% 1%;
+    display: inline-block;
     
 }
 
-.Contact-Me nav a{
-    /* padding: 10%; */
-    display: inline-block;
-}
+
+
+
+
 
 /* Image classes */
 .CBIR{
