@@ -6,6 +6,7 @@
 }
 :root{
     --Orange: rgb(240, 100, 39);
+    --Gray: rgb(198,198,198);
     --CSSBlue: rgb(41, 98, 242);
     --CssColor: rgb(37,77,227);
     --FontSize24: 24px;
@@ -125,8 +126,23 @@ flex: 0 0 90%;
     line-height: 1.5;
 }
 
-
-
+.ProjectStyle{
+display: flex;
+align-items: flex-end;
+text-decoration: none;
+border: 7px solid var(--Gray);
+min-height: 200px;
+max-height: 200px;
+}
+.ProjectStyle:first-child {
+min-height: 300px;
+flex-basis: 100%;
+}
+.ProjectStyle section{
+    background-color: var(--CSSBlue);
+    border: 5px solid var(--CssColor) ;
+    padding: 5px 10px;
+}
 
 
 
@@ -173,9 +189,16 @@ footer nav a{
 
 
 /* Image classes */
+.DisplayCards{
+    background-image: url("../images/BlackJack.jpg");
+    background-size: cover;
+}
 .CBIR{
     background-image: url("../images/Matlab.png");
+    background-size: cover;
 }
 .Scratch{
     background-image: url("../images/Galaga.PNG");
+    background-size: cover;
 }
+
