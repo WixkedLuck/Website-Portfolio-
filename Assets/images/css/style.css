@@ -3,6 +3,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: white;
     box-sizing: border-box;
+    
 }
 :root{
     --Orange: rgb(240, 100, 39);
@@ -14,6 +15,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     background-color: var(--CssColor);
 }
 h2, p{
@@ -26,6 +28,10 @@ h2{
 p{
     font-size: x-large;
 }
+h1 h2{
+    font-family: monospace; 
+    margin: 0;  
+   }
 
 
 header{
@@ -56,21 +62,24 @@ header nav a{
     padding: 5px;
     
 }
-
-.Section {
-
-display: flex;
-flex-wrap: wrap;
-align-items: inherit;
-justify-content: space-evenly;
-
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-h1 h2{
- font-family: monospace; 
- margin: 0;  
-}
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+} 
 
+
+
+
+
+main{
+    margin:10px;
+}
 
 .Frame{
     
@@ -101,11 +110,10 @@ h1 h2{
 
 
 .Standard{
-margin: 1px;
-padding: 30px;
+margin: 20px;
+padding: 30px 0;
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
 justify-content: space-between;
 align-items: stretch;
 
@@ -113,8 +121,8 @@ align-items: stretch;
 .Standard > h2{
     flex: 0 0 10%;
     text-align: right;
-    padding-right: 40px;
-    border-right: 30px solid color(black) ;
+    padding-right: 20px;
+    border-right: 5px solid var(--CSSBlue);
     
 }
 .Standard > section{
@@ -122,8 +130,15 @@ flex: 0 0 90%;
 
 }
 .Standard p{
+    padding-left: 20px;
     margin-bottom: 10px;
     line-height: 1.5;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
 }
 
 .ProjectStyle{
@@ -131,12 +146,16 @@ display: flex;
 align-items: flex-end;
 text-decoration: none;
 border: 7px solid var(--Gray);
-min-height: 200px;
-max-height: 200px;
+min-height: 300px;
+max-height: 400px;
+min-width: 400px;
+padding: 0 0 20px 0;
+margin: 1%;
+justify-content: space-between;
 }
 .ProjectStyle:first-child {
 min-height: 300px;
-flex-basis: 100%;
+flex-basis: 90%;
 }
 .ProjectStyle section{
     background-color: var(--CSSBlue);
@@ -148,39 +167,49 @@ flex-basis: 100%;
 
 
 
-
-
-
 footer{
    
+    margin: none;
+    padding: 10x;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     background-color: var(--CSSBlue);
-    padding: 15px 1% 30px 1%;
-
 
 }
-footer h2{
-flex: 0 0 10%;
-padding-right: 20px;
-
+footer > h2{
+    flex: 0 0 10%;
+    text-align: right;
+    
 
 }
+footer > section{
+    flex: 0 0 90%;
+}
+
+
 footer nav{
     display: flex;
+   margin-top: 40px;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-
-    font-size: var(--FontSize24);
+    font-size: xx-large;
 }
 footer nav a{
-    text-decoration: none;
+    
     padding: 5px;
     margin: 0 1% 1%;
-    display: inline-block;
+    display: inline-block; 
     
+}
+footer nav a:hover{
+    color:black;
+}
+
+h4{
+    text-align: right;
+    text-emphasis: none;
 }
 
 
@@ -201,4 +230,50 @@ footer nav a{
     background-image: url("../images/Galaga.PNG");
     background-size: cover;
 }
+.RStudio{
+    background-image: url("../images/r-studio.png");
+    background-size: cover;
+}
 
+
+
+@media screen and (max-width: 980px) {
+    body{
+        background-color: var(--Orange);
+    }
+    header{
+        justify-content: center;
+        text-align: center;
+        background-color: var(--CssColor);
+    }
+    header h1{
+        background-color: var(--CSSBlue);
+        width: 100%;
+
+    }
+    header nav a{
+        background-color: var(--CSSBlue);
+    }
+    .Standard > h2,
+    .Standard > section{
+        flex: 0 0 50%;
+        border-right:5px solid rgb(228, 76, 37); 
+        
+        margin: 10px;
+        
+    }
+    
+    .ProjectStyle section{
+        background-color: var(--Orange);
+        border: 5px solid  rgb(228, 76, 37);
+       
+    }
+    
+    footer{
+        background-color: rgb(228, 76, 37);
+    }
+    footer nav{
+        justify-content: center;
+        text-align: center;
+    }
+}
