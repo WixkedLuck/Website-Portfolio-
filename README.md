@@ -31,7 +31,7 @@ Clone the repository on GitHub then open Git on your local machine. First find a
 The purpose of this project is to show off my talents and skills to employers in the form of a portfolio  
 
 ```md 
-![alt text](./images/01-html-css-git-homework-demo.png)
+![alt text](./Assets/images/images/WebsiteDemo.PNG)
 ```
 
 
