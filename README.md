@@ -30,9 +30,9 @@ Clone the repository on GitHub then open Git on your local machine. First find a
 # Usage 
 The purpose of this project is to show off my talents and skills to employers in the form of a portfolio  
 
-```md 
-![alt text](./Assets/images/images/WebsiteDemo.PNG)
-```
+
+![Challange2] (./Assets/images/images/WebsiteDemo.PNG)
+
 
 
 # Deployed Site
