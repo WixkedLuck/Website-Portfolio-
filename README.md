@@ -1,4 +1,4 @@
-# Module-Challange-2
+# Project Portfolio 
 ## This is challenge two for UoM Advanced CSS: Portfolio Page
 For this challenge I was tasked with creating my own website portfolio while implementing various advanced styling options in css. 
 
