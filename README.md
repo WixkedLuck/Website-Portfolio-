@@ -37,6 +37,6 @@ The purpose of this project is to show off my talents and skills to employers in
 
 # Deployed Site
 
-(https://wixkedluck.github.io/Module-2-Challange/)
+https://wixkedluck.github.io/Website-Portfolio-/
 
 
